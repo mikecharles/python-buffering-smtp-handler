@@ -8,4 +8,4 @@ This code was produced using [this](https://gist.github.com/anonymous/1379446) G
 Installing
 ----------
 
-  pip install buffering-smtp-handler
+    pip install buffering-smtp-handler
