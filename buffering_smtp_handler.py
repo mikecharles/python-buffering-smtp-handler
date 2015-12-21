@@ -21,7 +21,7 @@ class BufferingSMTPHandler(logging.handlers.BufferingHandler):
                 if not port:
                     port = smtplib.SMTP_PORT
                 smtp = smtplib.SMTP(self.mailhost, port)
-                msg = "From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" % (self.fromaddr, self.toaddrs.join(","), self.subject)
+                msg = "From: {}\r\nTo: {}\r\nSubject: {}\r\n\r\n".format(self.fromaddr, ','.join(self.toaddrs), self.subject)
                 for record in self.buffer:
                     s = self.format(record)
                     msg = msg + s + "\r\n"
