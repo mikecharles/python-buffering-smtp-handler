@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(name='buffering-smtp-handler',
-      version='0.1',
+      version='0.2',
       py_modules=['buffering_smtp_handler'],
       url='https://github.com/mike-charles/python-buffering-smtp-handler',
       author='Mike Charles',
